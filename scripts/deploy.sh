@@ -13,4 +13,4 @@ echo "Pulling new image"
 docker pull 991940085316.dkr.ecr.us-east-1.amazonaws.com/frontend:latest
 
 echo "Starting container"
-docker run -d -p 80:2000 --name frontend 991940085316.dkr.ecr.us-east-1.amazonaws.com/frontend:latest
+docker run -d -p 80:6000 --name frontend 991940085316.dkr.ecr.us-east-1.amazonaws.com/frontend:latest
