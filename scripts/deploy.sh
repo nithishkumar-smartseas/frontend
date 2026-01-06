@@ -12,5 +12,8 @@ docker rm frontend || true
 echo "Pulling new image"
 docker pull 991940085316.dkr.ecr.us-east-1.amazonaws.com/frontend:latest
 
-echo "Starting container"
-docker run -d -p 80:6000 --name frontend 991940085316.dkr.ecr.us-east-1.amazonaws.com/frontend:latest
+echo "Starting frontend container"
+docker run -d \
+  --name frontend \
+  --network app-network \
+  991940085316.dkr.ecr.us-east-1.amazonaws.com/frontend:latest
