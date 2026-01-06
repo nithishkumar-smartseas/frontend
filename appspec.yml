@@ -4,8 +4,7 @@ os: linux
 files:
   - source: /
     destination: /home/ubuntu/frontend
-    exclude:
-      - appspec.yml
+    
 
 hooks:
   BeforeInstall:
