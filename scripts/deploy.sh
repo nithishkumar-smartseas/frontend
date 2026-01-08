@@ -16,4 +16,5 @@ echo "Starting frontend container"
 docker run -d \
   --name frontend \
   --network app-network \
+  --restart unless-stopped \
   991940085316.dkr.ecr.us-east-1.amazonaws.com/frontend:latest
